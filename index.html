@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css.css" rel="stylesheet">
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class=" bg-cover " style="background-image: url(pexels-photo-209831.webp);">
+    <section class="flex justify-center  items-center  h-dvh ">
+
+        <div class=" border-2 p-16  rounded-2xl bg-[rgb(150 154 161 / 39%)] ">
+            <div>
+                <input type="text" id="f" placeholder="entre city name" class="rounded-lg outline-none">
+                <button onclick="searchbtn()">
+
+                    <i class="fa-solid fa-magnifying-glass bg-white p-1 rounded-lg"></i>
+                </button>
+
+
+            </div>
+            <div class="text-xl text-cyan-400  flex justify-center " >
+                <p class="hidden" id="show"> invailid city name</p>
+            </div>
+            <div id="hid" class="hidden">
+
+                <div class=" flex justify-center flex-col items-center mt-3
+                ">
+                    <img src="sunny.webp" alt="" class="h-32 " id="weatherimg">
+                    <h6 class="mt-4 text-white text-2xl font-semibold" id="temp">22 </h6>
+                    <p class="mt-5 text-white  text-3xl font-bold" id="cityname">india</p>
+                </div>
+                <div class=" flex justify-center flex-row items-center gap-5 mt-5">
+                    <div class="flex">
+
+                        <img src="fog.png" alt="" class="h-8">
+                        <div class="flex flex-col items-center">
+                            <h1 class="text-white text-xl" id="htemp">11</h1>
+                            <h1 class="text-white text-xl">humidity</h1>
+                        </div>
+                    </div>
+                    <div class="flex">
+
+                        <i class="fa-solid fa-wind  text-white "></i>
+
+                        <div class="flex flex-col items-center">
+                            <h1 class="text-white text-xl" id="wtemp">11</h1>
+                            <h1 class="text-white text-xl">wind speed</h1>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
